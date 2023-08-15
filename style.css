@@ -5,3 +5,28 @@ body{
     background-size: cover;
 
 }
+
+
+
+#text-container {
+    opacity: 0;
+    animation: fadeIn 5s forwards, darkenText 4s 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes darkenText {
+    0% {
+      color: #482c24; /* Initial light color */
+    }
+    100% {
+      color: #2675c4c3; /* Final darker color */
+    }
+  }
